@@ -4,10 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filterByInitial(namesArray, letter) {
+    return namesArray.filter(name => name[0].toLowerCase() === letter.toLowerCase());
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const letter = "A";
+console.log(filterByInitial(names, letter));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
